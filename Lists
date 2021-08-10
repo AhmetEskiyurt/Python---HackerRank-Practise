@@ -1,0 +1,23 @@
+if __name__ == '__main__':
+
+    No= int (input())   
+    L1=[]
+
+    for i in range(No):
+        a=input().split()
+    
+        if a[0] == "insert":
+            L1.insert(int(a[1]),int(a[2]))
+        elif a[0]=="print":
+            print(L1)
+        elif a[0] == "append":
+            L1.append(int(a[1]))
+        elif a[0] == "sort":
+            L1.sort()
+        elif a[0] == "pop":
+            L1.pop()
+        elif a[0] == "remove":
+            L1.remove(int(a[1]))
+        else :
+            L1.reverse()
+     
